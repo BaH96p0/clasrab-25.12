@@ -18,11 +18,5 @@ from django.contrib import admin
 from django.urls import path, include
 from .views import *
 urlpatterns = [
-    path('', index, name='home'),
-    path('author', author, name='author'),
-    path('update/<int:id>', update_book, name='update'),
-    path('bookview', BookView.as_view(), name='view'),
-    path('bookcreate', BookCreateView.as_view(), name='createview'),
-    path('bookupdate', BookUpdateView.as_view(), name='updateview'),
-    path('list', ArticleView.as_view(), name='listview'),
+    path('', index, name='home')
 ]
